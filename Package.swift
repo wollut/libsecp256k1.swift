@@ -41,7 +41,6 @@ let package = Package(
             publicHeadersPath: "secp256k1/include",
             cSettings: [
                 .headerSearchPath("generated"),
-                .unsafeFlags(["-w"]),
             ]
         ),
     ]
