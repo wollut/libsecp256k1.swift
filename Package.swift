@@ -41,6 +41,10 @@ let package = Package(
             publicHeadersPath: "secp256k1/include",
             cSettings: [
                 .headerSearchPath("generated"),
+                .define("USE_NUM_NONE"),
+                .define("USE_FIELD_INV_BUILTIN"),
+                .define("USE_SCALAR_INV_BUILTIN"),
+                .define("ENABLE_MODULE_RECOVERY"),
             ]
         ),
     ]
